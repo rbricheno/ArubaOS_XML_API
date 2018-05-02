@@ -1,1 +1,1 @@
-from ArubaOS_XML_API import aruba_cmd
+from ArubaOS_XML_API.aruba_cmd import aruba_cmd
