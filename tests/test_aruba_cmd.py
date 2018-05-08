@@ -14,7 +14,7 @@ class TestArubaCmd(unittest.TestCase):
 
     @mock.patch('requests.post')
     @mock.patch('xml.etree.ElementTree.fromstring')
-    def test_new_client_has_variables(self, mock_element_tree_fromstring, mock_post):
+    def test_aruba_cmd(self, mock_element_tree_fromstring, mock_post):
         cmd = "user_authenticate"
         ip_addr = "192.168.1.7"
         switchip = "192.168.1.3"
