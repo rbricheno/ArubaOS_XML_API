@@ -9,7 +9,7 @@ Notably this allows programmatically changing the user name of clients in a "cap
 pip install ArubaOS-XML-API
 ```
 
-##Worked example
+## Worked example
 
 Here we configure ```my_service```, a wireless service using a custom captive portal. Our captive portal server is a web
 server which knows how to authenticate our local, 1st party usernames.
@@ -47,7 +47,7 @@ in the redirection URL when redirecting users to facilitate this. The following 
 
 The captive portal server updates the database to add usernames to sessions being tracked by the RADIUS servers.
 
-###Aruba configuration
+### Aruba configuration
 
 **Configure Captive Portal server.** Assume ```https://login.wireless.example.com/``` is a web server running Python,
 which can authenticate our (1st party) users somehow, and make use of the ArubaOS-XML-API Python module.
@@ -117,7 +117,7 @@ Optionally, **configure bandwidth limits** for unauthenticated users:
 (host) (Virtual AP profile "my_service-vap") #broadcast-filter all
 ```
 
-###Python code on captive portal server
+### Python code on captive portal server
 Now we can finally write Python to record logins and update the user via the XML API:
 
 The "authenticate" function is passed the 1st party username of the identified user, and the URL provided by the Aruba
