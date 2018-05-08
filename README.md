@@ -1,4 +1,9 @@
 # ArubaOS XML API client
+
+[![Build Status](https://travis-ci.org/rbricheno/ArubaOS_XML_API.svg?branch=master)](https://travis-ci.org/rbricheno/client_of_redundant_servers)
+[![codecov](https://codecov.io/gh/rbricheno/ArubaOS_XML_API/branch/master/graph/badge.svg)](https://codecov.io/gh/rbricheno/client_of_redundant_servers)
+[![PyPI version](https://badge.fury.io/py/ArubaOS-XML-API.svg)](https://badge.fury.io/py/ArubaOS-XML-API)
+
 This is a simple client for the [Aruba OS](http://www.arubanetworks.com/en-gb/products/networking/arubaos/)
 [XML API](http://www.arubanetworks.com/techdocs/ArubaOS_60/UserGuide/XML_API.php).
 
