@@ -2,7 +2,7 @@ import requests
 import xml.etree.ElementTree as ElementTree
 
 
-def aruba_cmd(cmd, ip_addr, controller_ip, user_id, password, aruba_key_hashed, aruba_key_type):
+def aruba_cmd(cmd, ip_addr, controller_ip, user_id, password, aruba_key, aruba_key_type):
     """Python function to make requests of the ArubaOS XML API
        http://www.arubanetworks.com/techdocs/ArubaOS_60/UserGuide/XML_API.php"""
     aruba_url = "https://" + controller_ip + "/auth/command.xml"
@@ -12,7 +12,7 @@ def aruba_cmd(cmd, ip_addr, controller_ip, user_id, password, aruba_key_hashed, 
 \t<name>""" + user_id + """</name>
 \t<password>""" + password + """</password>
 \t<version>1.0</version>
-\t<key>""" + aruba_key_hashed + """</key>
+\t<key>""" + aruba_key + """</key>
 \t<authentication>""" + aruba_key_type + """</authentication>
 </aruba>"""
 
