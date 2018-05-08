@@ -61,11 +61,14 @@ Optionally, **configure bandwidth limits** for unauthenticated users:
 (host) (config) #aaa bandwidth-contract unauth-down_bw kbits 768
 (host) (config) #aaa bandwidth-contract unauth-up_bw kbits 256
 ```
-**Define ACLs** for services that need to be accessible to unauthenticated users to allow them access to network services and our captive portal server. Also create an ACL that allows full network access.
+**Define ACLs** for services that need to be accessible to unauthenticated users to allow them access to network
+services and our captive portal server. Also create an ACL that allows full network access.
 
-(omitted for brevity, results in my_icmp-acl, my_dhcp-acl, my_dns-acl, my_service-captiveportal-acl and my_service-open-acl).
+(omitted for brevity, results in my_icmp-acl, my_dhcp-acl, my_dns-acl, my_service-captiveportal-acl and
+my_service-open-acl).
  
-**Create users and roles.** Create a "login" user and role for users who are not yet logged in, with limited access to resources, and another "open" user and role for logged-in users with full access to network resources:
+**Create users and roles.** Create a "login" user and role for users who are not yet logged in, with limited access to
+resources, and another "open" user and role for logged-in users with full access to network resources:
 ```
 (host) (config) #local-userdb add username my_service-login password ... role my_service-login_role
 
